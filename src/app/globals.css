@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -18,16 +24,43 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .scrollbar::-webkit-scrollbar {
+    height: .75rem;
+    border-radius: 8px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: #2E151B;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #B0E7E4;
+    border-radius: 8px;
+    border: 3px solid #B0E7E4;
+  }
+
+  .cardScroll::-webkit-scrollbar {
+    width: .2rem;
+    border-radius: 3px;
+  }
+  .cardScroll::-webkit-scrollbar-track {
+    background: #2E151B;
+  }
+  
+  .cardScroll::-webkit-scrollbar-thumb {
+    background-color: #B0E7E4;
+    border-radius: 8px;
+  }
 }
+
+

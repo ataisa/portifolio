@@ -7,11 +7,47 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      primary: {
+        "100": "#E76885",
+        "50": "#ED92A3",
+        "25": "#FCC7D7",
+      },
+      secondary: {
+        "100": "#B0E7E4",
+        "50": "#BFE9E5",
+        "25": "#DBFBFA",
+      },
+      dark: {
+        "100": "#0C0507",
+        "75": "#170A0D",
+        "50": "#231014",
+        "25": "#2E151B",
+      },
+      "white-pink": {
+        "100": "#FEF7F9",
+        "75": "#FDF0F3",
+        "50": "#FCE9ED",
+        "25": "#FAE1E7",
+      },
+      white: {
+        default: "#FAF7FC",
+        ice: "#EFE9F5",
+      },
+      gray: {
+        100: "#AEA7B5",
+      },
+    },
     extend: {
+      fontFamily: {
+        archivo: ["var(--font-archivo)"],
+        poppins: ["var(--font-poppins)"],
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "white-linear": "linear-gradient(90deg, #FAF7FC 0%, #EFE9F5 100%)",
+        "primary-linear": "linear-gradient(90deg, #E76885 0%, #FCC7D7 100%)",
+        "projects-bg":
+          "url('/projects-bg.svg'), linear-gradient(90deg, #E76885 0%, #FCC7D7 100%)",
       },
     },
   },

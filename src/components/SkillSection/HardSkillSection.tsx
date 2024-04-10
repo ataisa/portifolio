@@ -61,7 +61,7 @@ const HardSkillSection = () => {
               className="w-full object-fill"
               width={200}
               height={200}
-              src="/images/projetos/gestaoDeProjetos.jpeg"
+              src="/images/projetos/vendas.jpeg"
               alt="imagem do projeto"
             />
           </div>
@@ -71,9 +71,11 @@ const HardSkillSection = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-2 font-poppins text-dark-25">
-          <h3 className="text-lg uppercase">Gestão de acompanhamento</h3>
+          <h3 className="text-lg uppercase">Dashboard de vendas</h3>
           <p className="text-sm font-light">
-            Dashboard criado para monitoramento e gestão de projetos de obras.
+            Esse Dashboard apresenta além dos gerentes que mais vendeu, como
+            também a região, também fiz versão mobile pra melhorar visualização
+            no celular.
           </p>
         </div>
         <div className="flex flex-wrap items-center justify-start gap-2">
@@ -82,7 +84,7 @@ const HardSkillSection = () => {
               "rounded-xl bg-dark-25 px-12 py-3 text-white-default duration-500",
               "hover:opacity-80",
             )}
-            href="https://www.linkedin.com/posts/isadatasciense_powerbi-businessintelligence-projeto-activity-7169760090969751553-8jKt?utm_source=share&utm_medium=member_android"
+            href="https://www.linkedin.com/posts/isadatasciense_acompanhamentodevendas-businessintelligence-activity-7178172582142107649-9WgV?utm_source=share&utm_medium=member_android"
             target="_blank"
             rel="noreferrer"
           >

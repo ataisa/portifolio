@@ -1,5 +1,7 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Poppins, Archivo } from "next/font/google";
+import { Archivo, Poppins } from "next/font/google";
+
 import "./globals.css";
 
 const archivoFont = Archivo({
@@ -34,7 +36,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${archivoFont.variable} ${poppins.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

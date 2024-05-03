@@ -82,7 +82,7 @@ const projectsInfo: projectInfoType[] = [
       "Esse dashboard já e conectado ao banco que montei, nele mostra onde mais teve casos confirmados e a comparação de óbito pra ter a noção da fatalidade que causa.",
     projetoUrl:
       "https://www.linkedin.com/posts/isadatasciense_covid19-coronavirus-brasil-activity-7180942069492813825-c9hQ?utm_source=share&utm_medium=member_desktop",
-    tecs: [RiFileExcel2Fill, SiPowerbi],
+    tecs: [SiMysql, SiPowerbi],
     tag: "BI",
     downloadUrl: "files/projetos/COVID19.pbix",
   },

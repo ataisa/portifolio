@@ -24,6 +24,7 @@ function ContactSection() {
       <h1 className="font-archivo text-lg font-semibold text-primary-100">
         CONTATO
       </h1>
+      <p className="text-primary-100">isabela.mf.santos@gmail.com</p>
 
       <form
         method="POST"
